@@ -8,14 +8,27 @@ This project demonstrates the implementation of an Auto Scaling solution on AWS,
 
 Features
 Auto Scaling Groups: Configured to automatically launch or terminate EC2 instances based on scaling policies.
+
 CloudWatch Alarms: Set up to monitor key metrics such as CPU utilization and network traffic, triggering scaling actions.
+
+
 Scaling Policies: Policies defined to scale out or scale in based on thresholds set for CloudWatch metrics.
+
 Load Testing: Conducted load tests using Apache JMeter to validate the Auto Scaling policies.
+
 High Availability: Ensured that the application remains available during traffic spikes by distributing load across multiple instances.
+
 Technologies Used
+
 AWS EC2
 AWS Auto Scaling
 AWS CloudWatch
+AWS Route53
+Code Pipeline
+Code Build
+VPC
+LoadBalancer
+IAM
 Terraform
 Postman Runner
 Prerequisites
@@ -48,5 +61,5 @@ Monitor Scaling Actions:
 
 Access the AWS Management Console and navigate to the Auto Scaling Groups to monitor the scaling activities.
 Load Testing
-Load testing was performed using Apache JMeter to simulate traffic and observe the scaling behavior.
-You can customize the JMeter scripts located in the load-testing directory and run your own
+Load testing was performed using Postman runner to simulate traffic and observe the scaling behavior.
+
